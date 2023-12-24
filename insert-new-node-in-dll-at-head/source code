@@ -1,0 +1,8 @@
+// Function to insert new node before head
+Node* insertBeforeHead(Node* head, int val){
+    // Create new node with data as val
+    Node* newHead = new Node(val , head, nullptr);
+    head->back = newHead;
+    
+    return newHead;
+}
